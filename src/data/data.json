@@ -52,7 +52,7 @@
   ],
   "skills": [
     {
-      "title": "Programming languages",
+      "title": "Lenguajes de Programación",
       "list": [
         "HTML",
         "CSS",
@@ -62,9 +62,9 @@
       ]
     },
     {
-      "title": "Libraries and Frameworks",
+      "title": "Bibliotecas y Frameworks",
       "list": [
-        "BootsStrap",
+        "Bootstrap",
         "NodeJs",
         "React",
         "Laravel",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "title": "Further knowledge",
+      "title": "Otras Tecnologías",
       "list": [
         "Git & GitHub",
         "Linux",

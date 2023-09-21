@@ -1,8 +1,10 @@
-# Portfolio Website - Astro
+<h3 align="center">Portfolio Website - Astro</h3>
 
-[![Deploy to GitHub Pages](https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/deploy.yml)
-
-Just change `src/data/index.ts` to get your personal portfolio.
+<p align="center">
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/MrOlivo/mrolivo.github.io/deploy.yml?colorA=363a4f&colorB=b7bdf8&style=for-the-badge" alt="Deploy to GitHub Pages"></a>
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/issues"><img src="https://img.shields.io/github/issues/MrOlivo/mrolivo.github.io?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/contributors"><img src="https://img.shields.io/github/contributors/MrOlivo/mrolivo.github.io?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
 
 ## portfolio template for Developers!
 

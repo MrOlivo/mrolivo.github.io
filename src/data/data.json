@@ -2,7 +2,7 @@
   "baseUrl": "https://mrolivo.github.io/",
   "name": "Edwin Olivo",
   "jobDescription": "Web Developer",
-  "about": "Soy ingeniero de software y vivo en Tepic, México. Recién egresado de la universidad con una especialización en desarrollo web. Aunque no tengo experiencia laboral previa, cuento con conocimientos teóricos y prácticos sobre los lenguajes de programación y herramientas relacionadas con el desarrollo web. Además, tengo la capacidad de utilizar mi formación y creatividad para resolver problemas, y trabajar en equipo para lograr objetivos.",
+  "about": "Licenciado en Sitemas Computaciones y resido en México. Cuento con conocimientos teóricos y prácticos sobre los lenguajes de programación y herramientas relacionadas con el desarrollo web. Además, tengo la capacidad de utilizar mi formación y creatividad para resolver problemas, y trabajar en equipo para lograr objetivos.",
   "experience": [
     {
       "name": "CICESE-UT3",
@@ -43,8 +43,8 @@
     {
       "name": "Universidad Autónoma de Nayarit",
       "position": "Lic. Sistemas Computacionales",
-      "startDate": "2017",
-      "endDate": "2023",
+      "startDate": "Agosto 2017",
+      "endDate": "Diciembre 2022",
       "description": [
         "Me he formado en un entorno de excelencia, calidad competitiva y compromiso ético y social, adquiriendo habilidades y competencias para analizar, diseñar, construir, implementar y mantener sistemas de información organizativos.También he sido capacitado para definir el entorno de tecnologías de la información y comunicaciones necesario para su funcionamiento óptimo."
       ]
@@ -53,22 +53,23 @@
   "skills": [
     {
       "title": "Lenguajes de Programación",
-      "list": ["HTML", "CSS", "JavaScript", "TypeScript", "C# (Sharp)"]
+      "list": "https://skillicons.dev/icons?i=js,ts,cs,php"
     },
     {
       "title": "Bibliotecas y Frameworks",
-      "list": [
-        "Bootstrap",
-        "NodeJs",
-        "React",
-        "Laravel",
-        "Astro",
-        "Tailwind CSS"
-      ]
+      "list": "https://skillicons.dev/icons?i=bootstrap,nodejs,react,laravel,astro,tailwind"
+    },
+    {
+      "title": "Bases de datos",
+      "list": "https://skillicons.dev/icons?i=mysql,mariabd"
+    },
+    {
+      "title": "Herramientas",
+      "list": "https://skillicons.dev/icons?i=vscode,idea,figma,linux"
     },
     {
       "title": "Otras Tecnologías",
-      "list": ["Git & GitHub", "Linux", "macOS", "Docker"]
+      "list": "https://skillicons.dev/icons?i=html,css,git,github,docker"
     }
   ],
   "socialMedia": {

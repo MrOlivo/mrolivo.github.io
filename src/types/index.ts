@@ -42,7 +42,7 @@ export interface Projects {
 
 export interface SkillSet {
   title: string;
-  list: string[];
+  list: string;
 }
 
 export interface Thumbnail {

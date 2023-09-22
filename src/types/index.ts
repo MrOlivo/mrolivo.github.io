@@ -30,7 +30,7 @@ export interface Experiences {
 export interface Project {
   title: string;
   isFeatured: boolean;
-  thumbnails: Thumbnail;
+  thumbnail: string;
   githubUrl: string;
   liveUrl: string;
 }
@@ -43,13 +43,6 @@ export interface Projects {
 export interface SkillSet {
   title: string;
   list: string;
-}
-
-export interface Thumbnail {
-  png: string;
-  jpg?: string;
-  avif?: string;
-  webp?: string;
 }
 
 export interface ILink {

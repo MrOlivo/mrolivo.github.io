@@ -1,7 +1,8 @@
 ---
 import { Project } from "@types";
 import { GithubIcon, LinkIcon } from "@assets";
-const { title, thumbnails, liveUrl, githubUrl } = Astro.props as Project;
+import { Image } from "astro:assets";
+const { title, thumbnail, liveUrl, githubUrl } = Astro.props as Project;
 ---
 
 <article class="group relative max-h-72 w-full overflow-hidden">
@@ -33,18 +34,11 @@ const { title, thumbnails, liveUrl, githubUrl } = Astro.props as Project;
     }
   </div>
   <a href={liveUrl ? liveUrl : githubUrl} target="_blank">
-    <picture>
-      {thumbnails.avif && <source srcset={thumbnails.avif} type="image/avif" />}
-      {thumbnails.webp && <source srcset={thumbnails.webp} type="image/webp" />}
-      <img
-        src={thumbnails.jpg || thumbnails.png}
-        class="h-auto w-full scale-100 transition duration-[1.5s] hover:scale-110"
-        loading="lazy"
-        width="100%"
-        height="100%"
-        alt="featureImage"
-      />
-    </picture>
+    <Image
+      src={import(thumbnail.toString()).then(img => img)}
+      alt="Miniatura"
+      class="h-auto w-full scale-100 transition duration-[1.5s] hover:scale-110"
+    />
   </a>
   <div
     class="absolute bottom-0 left-0 w-full translate-y-[100%] bg-black/50 p-4 text-white backdrop-blur-md transition duration-700 group-hover:translate-y-0"

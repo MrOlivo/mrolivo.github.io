@@ -1,7 +1,7 @@
 ---
 import { information } from "@data";
 import { createLogo } from "@utils";
-import { moon, sun } from "@assets";
+import { sun, mun } from "@assets";
 import NavItem from "@components/NavItem.astro";
 import LinkItem from "@components/LinkItem.astro";
 ---
@@ -46,11 +46,11 @@ import LinkItem from "@components/LinkItem.astro";
   </nav>
 </header>
 
-<script is:inline define:vars={{ moon, sun }}>
+<script is:inline define:vars={{ sun, mun }}>
   const themeButton = document.getElementById("theme-button");
   const themeButtonIcon = document.getElementById("theme-icon");
   const themeButtonText = document.querySelector("#theme-button > span");
-  const themeBodyClass = document.querySelector("body");
+  const themeBodyClass = document.body;
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isLight;
 
@@ -74,19 +74,14 @@ import LinkItem from "@components/LinkItem.astro";
   };
 
   const applyTheme = (theme) => {
-    if (theme === "light") {
-      setDocumentAttributes("light", sun);
-    } else {
-      setDocumentAttributes("dark", moon);
-    }
+    setDocumentAttributes(theme, theme === "light" ? sun : mun);
     themeBodyClass.classList.toggle("dark", !isLight);
     themeBodyClass.classList.toggle("mocha", !isLight);
-    window.localStorage.setItem("theme", theme);
   };
 
   const toggleTheme = () => {
     const newTheme = isLight ? "dark" : "light";
-    localStorage.theme = newTheme;
+    localStorage.setItem("theme", newTheme);
     applyTheme(newTheme);
   };
 

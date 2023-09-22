@@ -53,13 +53,7 @@
   "skills": [
     {
       "title": "Lenguajes de Programación",
-      "list": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "C# (Sharp)"
-      ]
+      "list": ["HTML", "CSS", "JavaScript", "TypeScript", "C# (Sharp)"]
     },
     {
       "title": "Bibliotecas y Frameworks",
@@ -74,12 +68,7 @@
     },
     {
       "title": "Otras Tecnologías",
-      "list": [
-        "Git & GitHub",
-        "Linux",
-        "macOS",
-        "Docker"
-      ]
+      "list": ["Git & GitHub", "Linux", "macOS", "Docker"]
     }
   ],
   "socialMedia": {

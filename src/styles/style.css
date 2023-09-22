@@ -24,7 +24,7 @@
   }
 
   h1 {
-    @apply text-6xl sm:text-8xl main-heading;
+    @apply main-heading text-6xl sm:text-8xl;
   }
 
   h2 {
@@ -39,6 +39,6 @@
   }
 
   .container {
-    @apply max-w-[1112px] mx-auto px-4;
+    @apply mx-auto max-w-[1112px] px-4;
   }
 }

@@ -13,5 +13,5 @@ const { title, href, ...props } = Astro.props as ILink;
   <div>
     <slot />
   </div>
-  {title && <span class="pl-2 font-bold text-dark">{title}</span>}
+  {title && <span class="pl-2 text-lg font-bold text-dark">{title}</span>}
 </a>

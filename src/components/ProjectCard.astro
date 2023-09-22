@@ -1,6 +1,6 @@
 ---
 import { Project } from "@types";
-import { github, link } from "@assets";
+import { GithubIcon, LinkIcon } from "@assets";
 const { title, thumbnails, liveUrl, githubUrl } = Astro.props as Project;
 ---
 
@@ -14,7 +14,7 @@ const { title, thumbnails, liveUrl, githubUrl } = Astro.props as Project;
           aria-label="Social Media"
           target="_blank"
         >
-          <Fragment set:html={github} />
+          <Fragment set:html={GithubIcon} />
         </a>
       )
     }
@@ -27,7 +27,7 @@ const { title, thumbnails, liveUrl, githubUrl } = Astro.props as Project;
           aria-label="Social Media"
           target="_blank"
         >
-          <Fragment set:html={link} />
+          <Fragment set:html={LinkIcon} />
         </a>
       )
     }

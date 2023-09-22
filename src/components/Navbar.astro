@@ -76,11 +76,11 @@ import LinkItem from "@components/LinkItem.astro";
   const applyTheme = (theme) => {
     if (theme === "light") {
       setDocumentAttributes("light", sun);
-      themeBodyClass.classList.replace("mocha", "latte");
     } else {
       setDocumentAttributes("dark", moon);
-      themeBodyClass.classList.replace("latte", "mocha");
     }
+    themeBodyClass.classList.toggle("dark", !isLight);
+    themeBodyClass.classList.toggle("mocha", !isLight);
     window.localStorage.setItem("theme", theme);
   };
 

@@ -7,7 +7,7 @@ const { title, projects, ...props } = Astro.props as Projects;
 ---
 
 <Section title={title} {...props}>
-  <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-16">
+  <div class="my-16 grid grid-cols-1 gap-4 md:grid-cols-2">
     {
       projects.map(({ title, thumbnails, liveUrl, githubUrl }) => (
         <ProjectCard

@@ -11,7 +11,7 @@
 /* ========== tailwind custom styles ========== */
 @layer components {
   body {
-    @apply bg-light dark:bg-dark;
+    @apply bg-base;
   }
 
   h1,
@@ -20,7 +20,7 @@
   h4,
   h5,
   h6 {
-    @apply font-outfit;
+    @apply font-outfit text-text;
   }
 
   h1 {
@@ -33,8 +33,9 @@
 
   p,
   li,
-  a {
-    @apply font-inter text-dark-gray;
+  a,
+  span {
+    @apply font-inter text-text;
   }
 
   .container {

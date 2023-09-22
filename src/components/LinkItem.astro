@@ -4,14 +4,14 @@ const { title, href, ...props } = Astro.props as ILink;
 ---
 
 <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex items-center justify-center p-3 ml-2 rounded-lg bg-slate-300 dark:bg-sky-200 hover:bg-sky-300 dark:hover:bg-indigo-300 cursor-pointer"
-    {...props}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="ml-2 flex cursor-pointer items-center justify-center rounded-lg bg-slate-300 p-3 text-dark hover:bg-blue"
+  {...props}
 >
-    <div>
-        <slot />
-    </div>
-    {title && <span class="pl-2 font-bold">{title}</span>}
+  <div>
+    <slot />
+  </div>
+  {title && <span class="pl-2 font-bold text-dark">{title}</span>}
 </a>

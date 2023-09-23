@@ -1,8 +1,7 @@
 ---
-import { Project, Projects } from "@types";
 import ProjectCard from "@components/ProjectCard.astro";
 import Section from "@components/Section.astro";
-import { Image } from "astro:assets";
+import { Project, Projects } from "@types";
 const allImages = await Astro.glob("../assets/img/*.png");
 const { title, projects, ...props } = Astro.props as Projects;
 ---
@@ -10,20 +9,16 @@ const { title, projects, ...props } = Astro.props as Projects;
 <Section title={title} {...props}>
   <div class="my-16 grid grid-cols-1 gap-4 md:grid-cols-2">
     {
-      projects.map(
-        ({ title, liveUrl, githubUrl }: Project, idx: number) => {
-          return (
-            <ProjectCard
-              title={title}
-              thumbnail={
-                allImages[idx].default
-              }
-              liveUrl={liveUrl}
-              githubUrl={githubUrl}
-            />
-          );
-        },
-      )
+      projects.map(({ title, liveUrl, githubUrl }: Project, idx: number) => {
+        return (
+          <ProjectCard
+            title={title}
+            thumbnail={allImages[idx].default}
+            liveUrl={liveUrl}
+            githubUrl={githubUrl}
+          />
+        );
+      })
     }
   </div>
 </Section>

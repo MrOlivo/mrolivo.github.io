@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "format": "pnpm prettier -w src/",
     "format:astro": "pnpm prettier -w src/**/*.astro"
   },
   "devDependencies": {

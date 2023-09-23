@@ -82,21 +82,21 @@
     {
       "title": "Personal Portfolio",
       "isFeatured": true,
-      "thumbnail": "../assets/img/astro-portfolio.png",
+      "thumbnail": "astro-portfolio.png",
       "githubUrl": "https://github.com/MrOlivo/astro-portfolio",
       "liveUrl": "https://mrolivo.github.io"
     },
     {
       "title": "Brutalism Concept website",
       "isFeatured": true,
-      "thumbnail": "../assets/img/brutalism.png",
+      "thumbnail": "brutalism.png",
       "githubUrl": "https://github.com/MrOlivo/Brutalism-UI",
       "liveUrl": "https://mrolivo.github.io/Brutalism-UI"
     },
     {
       "title": "Manga Calendar - Raycast extension",
       "isFeatured": true,
-      "thumbnail": "../assets/img/manga-calendar.png",
+      "thumbnail": "manga-calendar.png",
       "githubUrl": "https://github.com/MrOlivo/manga-schedule",
       "liveUrl": "https://www.raycast.com/mrolivo/manga-calendar"
     }

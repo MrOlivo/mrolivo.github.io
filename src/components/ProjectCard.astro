@@ -2,7 +2,7 @@
 import { Project } from "@types";
 import { GithubIcon, LinkIcon } from "@assets";
 import { Image } from "astro:assets";
-const { title, thumbnail, liveUrl, githubUrl } = Astro.props as Project;
+const { title, thumbnail, liveUrl, githubUrl } = Astro.props;
 ---
 
 <article class="group relative max-h-72 w-full overflow-hidden">
@@ -35,7 +35,7 @@ const { title, thumbnail, liveUrl, githubUrl } = Astro.props as Project;
   </div>
   <a href={liveUrl ? liveUrl : githubUrl} target="_blank">
     <Image
-      src={import(thumbnail.toString()).then(img => img)}
+      src={thumbnail}
       alt="Miniatura"
       class="h-auto w-full scale-100 transition duration-[1.5s] hover:scale-110"
     />

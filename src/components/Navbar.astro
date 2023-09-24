@@ -89,11 +89,9 @@ import LinkItem from "@components/LinkItem.astro";
 <script is:inline>
   const dropdownButton = document.getElementById("dropdownButton");
   const menu = document.getElementById("dropdown");
+  
   dropdownButton.addEventListener("click", () => {
-    if (menu.classList.contains("hidden")) {
-      menu.classList.replace("hidden", "absolute");
-    } else {
-      menu.classList.replace("absolute", "hidden");
-    }
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("absolute");
   });
 </script>

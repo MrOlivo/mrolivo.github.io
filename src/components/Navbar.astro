@@ -34,7 +34,7 @@ import LinkItem from "@components/LinkItem.astro";
         <NavItem text="Contacto" link="#contact" />
       </ul>
     </div>
-    <LinkItem id="theme-button" title="Dark mode">
+    <LinkItem id="theme-button" title="toggle">
       <div id="theme-icon" class="order-first text-dark md:order-last"></div>
     </LinkItem>
   </nav>
@@ -48,16 +48,34 @@ import LinkItem from "@components/LinkItem.astro";
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isLight;
 
-  themeButtonText.classList.add("capitalize");
+  // Change the docuemnt color
+  const toggleTheme = () => {
+    const newTheme = isLight ? "dark" : "light";
+    isLight = !isLight;
+    localStorage.setItem("theme", newTheme);
+    applyTheme();
+  };
 
-  const setDocumentAttributes = (dataTheme, themeIcon) => {
-    isLight = dataTheme === "light";
-    browserTheme.content = isLight ? "#EFF1F5" : "#1E1E2E";
+  const applyTheme = () => {
+    setDocumentAttributes(
+      isLight ? "light" : "dark",
+      isLight ? SunIcon : MoonIcon,
+      isLight ? "#EFF1F5" : "#1E1E2E",
+    );
+    themeBodyClass.classList.toggle("dark", !isLight);
+    themeBodyClass.classList.toggle("mocha", !isLight);
+  };
+
+  const setDocumentAttributes = (dataTheme, themeIcon, browserColor) => {
+    browserTheme.content = browserColor;
     themeButtonText.textContent = dataTheme;
     themeButtonIcon.innerHTML = themeIcon;
   };
 
-  const getInitialTheme = () => {
+  themeButton.addEventListener("click", toggleTheme);
+
+  // Initialize the theme
+  const initialTheme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
     }
@@ -65,31 +83,15 @@ import LinkItem from "@components/LinkItem.astro";
       return "dark";
     }
     return "light";
-  };
+  })();
 
-  const applyTheme = (theme) => {
-    setDocumentAttributes(theme, theme === "light" ? SunIcon : MoonIcon);
-    themeBodyClass.classList.toggle("dark", !isLight);
-    themeBodyClass.classList.toggle("mocha", !isLight);
-  };
-
-  const toggleTheme = () => {
-    const newTheme = isLight ? "dark" : "light";
-    localStorage.setItem("theme", newTheme);
-    applyTheme(newTheme);
-  };
-
-  themeButton.addEventListener("click", toggleTheme);
-
-  // Initialize the theme
-  const initialTheme = getInitialTheme();
   applyTheme(initialTheme);
 </script>
 
 <script is:inline>
   const dropdownButton = document.getElementById("dropdownButton");
   const menu = document.getElementById("dropdown");
-  
+
   dropdownButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
     menu.classList.toggle("absolute");

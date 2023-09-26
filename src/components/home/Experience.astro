@@ -20,7 +20,7 @@ const { title, details, ...props } = Astro.props as Experiences;
           </div>
           <ul class="mt-3">
             {item.description.map((item) => (
-              <li class="list-disc marker:text-blue">{item}</li>
+              <li class="list-disc marker:text-blue" set:html={item}></li>
             ))}
           </ul>
         </article>

@@ -10,9 +10,9 @@
       "startDate": "Septiembre 2022",
       "endDate": "Diciembre 2022",
       "description": [
-        "Responsable de desarrollar parte de la `interfaz web` para el nuevo sistema de gestión de inventario. Empleando `Pug` para componentes y *layouts*, y `Vue` para añadir funcionalidad.",
-        "Codificación del *end points* para la aplicación usando `Express` y `TypeScript`.",
-        "Encargado de la `migración` y `actualización` base de datos. Detección de registros duplicados; eliminación de dependencias incoherentes; corrección de código de caracteres; creación nuevas tablas para el nuevo modelo; y reorganización de los campos derivados."
+        "Responsable de desarrollar parte de la <code>interfaz web</code> para el nuevo sistema de gestión de inventario. Empleando <code>Pug</code> para componentes y <em>layouts</em>, y <code>Vue</code> para añadir funcionalidad.",
+        "Codificación del <em>end points</em> para la aplicación usando <code>Express</code> y <code>TypeScript</code>.",
+        "Encargado de la <code>migración</code> y <code>actualización</code> base de datos. Detección de registros duplicados; eliminación de dependencias incoherentes; corrección de código de caracteres; creación nuevas tablas para el nuevo modelo; y reorganización de los campos derivados."
       ]
     },
     {
@@ -23,7 +23,7 @@
       "description": [
         "Trasladar el contenido (texto, tablas e imágenes) del sitio web antiguo al nuevo seleccionando el componente de interfaz adecuado para cada instancia.",
         "Colaboración con el equipo de desarrollo y diseño en la detección de errores e inconsistencias en los componentes Drupal.",
-        "Empleé `Jira` para el control de las asignaciones o *tickets*."
+        "Empleé <code>Jira</code> para el control de las asignaciones o <em>tickets</em>."
       ]
     },
     {

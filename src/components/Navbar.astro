@@ -16,6 +16,7 @@ import LinkItem from "@components/LinkItem.astro";
     <button
       id="dropdownButton"
       data-dropdown-toggle="dropdown"
+      aria-label="Menu button"
       class="order-first ml-2 flex items-center rounded-lg bg-slate-200 p-4 focus:outline-none focus:ring focus:ring-sky-300 md:order-last md:hidden"
       type="button"
     >
@@ -34,13 +35,17 @@ import LinkItem from "@components/LinkItem.astro";
         <NavItem text="Contacto" link="#contact" />
       </ul>
     </div>
-    <LinkItem id="theme-button" title="toggle">
+    <LinkItem
+      id="theme-button"
+      title="toggle"
+      aria-label="Dark mode toggler button"
+    >
       <div id="theme-icon" class="order-first text-dark md:order-last"></div>
     </LinkItem>
   </nav>
 </header>
 
-<script is:inline define:vars={{ MoonIcon, SunIcon }}>
+<script define:vars={{ MoonIcon, SunIcon }}>
   const themeButton = document.getElementById("theme-button");
   const themeButtonIcon = document.getElementById("theme-icon");
   const themeButtonText = document.querySelector("#theme-button > span");
@@ -48,7 +53,7 @@ import LinkItem from "@components/LinkItem.astro";
   const browserTheme = document.querySelector('[name="theme-color"]');
   let isLight;
 
-  // Change the docuemnt color
+  // Change the document color
   const toggleTheme = () => {
     const newTheme = isLight ? "dark" : "light";
     isLight = !isLight;
@@ -88,7 +93,7 @@ import LinkItem from "@components/LinkItem.astro";
   applyTheme(initialTheme);
 </script>
 
-<script is:inline>
+<script>
   const dropdownButton = document.getElementById("dropdownButton");
   const menu = document.getElementById("dropdown");
 

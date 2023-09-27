@@ -1,19 +1,11 @@
 ---
 import { information } from "@data";
-
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import Projects from "@components/Projects.astro";
 import MetaHead from "@components/MetaHead.astro";
 import Skills from "@components/Skills.astro";
-
-// const featureProjects = information.projects.reduce((accumulator, project) => {
-//   if (accumulator.length < 6 && project.isFeatured) {
-//     accumulator.push(project);
-//   }
-//   return accumulator;
-// }, []);
 ---
 
 <!doctype html>
@@ -23,6 +15,12 @@ import Skills from "@components/Skills.astro";
       title={"Portafolio"}
       description={information.about}
       ogImageUrl={"/assets/images/profile.png"}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;600&display=swap"
+      rel="stylesheet"
     />
   </head>
 

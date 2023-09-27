@@ -1,13 +1,13 @@
 ---
 import Section from "@components/Section.astro";
 import { SkillSet } from "@types";
-const { title, skillSets, ...props } = Astro.props as {
+const { title, skillSets, ...attrs } = Astro.props as {
   title: string;
   skillSets: SkillSet[];
 };
 ---
 
-<Section title={title} {...props}>
+<Section title={title} {...attrs}>
   {
     skillSets.map(({ title, list }) => {
       return (

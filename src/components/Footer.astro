@@ -2,12 +2,12 @@
 import { information } from "@data";
 import { BentoIcon, EmailIcon, GithubIcon } from "@assets";
 import LinkItem from "@components/LinkItem.astro";
-const { ...props } = Astro.props;
+const { ...attrs } = Astro.props;
 ---
 
 <footer
   class="container mb-8 flex flex-col items-center justify-between sm:mb-4 sm:flex-row"
-  {...props}
+  {...attrs}
 >
   <p class="my-8 text-right">
     Improved by <strong>Edwin Olivo</strong>

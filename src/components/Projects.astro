@@ -3,10 +3,10 @@ import ProjectCard from "@components/ProjectCard.astro";
 import Section from "@components/Section.astro";
 import { Project, Projects } from "@types";
 const allImages = await Astro.glob("../assets/img/*.png");
-const { title, projects, ...props } = Astro.props as Projects;
+const { title, projects, ...attrs } = Astro.props as Projects;
 ---
 
-<Section title={title} {...props}>
+<Section title={title} {...attrs}>
   <div class="my-16 grid grid-cols-1 gap-4 md:grid-cols-2">
     {
       projects.map(({ title, liveUrl, githubUrl }: Project, idx: number) => {

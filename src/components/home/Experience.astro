@@ -2,10 +2,10 @@
 import Section from "@components/Section.astro";
 import { Experiences } from "@types";
 
-const { title, details, ...props } = Astro.props as Experiences;
+const { title, details, ...attrs } = Astro.props as Experiences;
 ---
 
-<Section title={title} {...props}>
+<Section title={title} {...attrs}>
     {
       details.map((item) => (
         <article class="my-8 first:mt-8 md:first:mt-16">

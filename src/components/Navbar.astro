@@ -1,7 +1,7 @@
 ---
 import { information } from "@data";
-import { createLogo } from "@utils";
-import { MoonIcon, SunIcon, MenuIcon } from "@assets";
+import { createLogo } from "src/utils/CreateLogo";
+import { MenuIcon } from "@assets";
 import NavItem from "@components/NavItem.astro";
 import LinkItem from "@components/LinkItem.astro";
 ---
@@ -45,52 +45,24 @@ import LinkItem from "@components/LinkItem.astro";
   </nav>
 </header>
 
-<script define:vars={{ MoonIcon, SunIcon }}>
-  const themeButton = document.getElementById("theme-button");
-  const themeButtonIcon = document.getElementById("theme-icon");
-  const themeButtonText = document.querySelector("#theme-button > span");
-  const themeBodyClass = document.body;
-  const browserTheme = document.querySelector('[name="theme-color"]');
-  let isLight;
-
-  // Change the document color
-  const toggleTheme = () => {
-    const newTheme = isLight ? "dark" : "light";
-    isLight = !isLight;
-    localStorage.setItem("theme", newTheme);
-    applyTheme();
-  };
-
-  const applyTheme = () => {
-    setDocumentAttributes(
-      isLight ? "light" : "dark",
-      isLight ? SunIcon : MoonIcon,
-      isLight ? "#EFF1F5" : "#1E1E2E",
-    );
-    themeBodyClass.classList.toggle("dark", !isLight);
-    themeBodyClass.classList.toggle("mocha", !isLight);
-  };
-
-  const setDocumentAttributes = (dataTheme, themeIcon, browserColor) => {
-    browserTheme.content = browserColor;
-    themeButtonText.textContent = dataTheme;
-    themeButtonIcon.innerHTML = themeIcon;
-  };
-
-  themeButton.addEventListener("click", toggleTheme);
-
-  // Initialize the theme
-  const initialTheme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  applyTheme(initialTheme);
+<script>
+  import { ThemeToggler } from "@utils/ThemeToggler";
+  const themeButton: HTMLElement = document.getElementById("theme-button");
+  const themeButtonIcon: HTMLElement = document.getElementById("theme-icon");
+  const themeButtonText: HTMLElement = document.querySelector(
+    "#theme-button > span",
+  );
+  const themeBodyClass: HTMLElement = document.body;
+  const browserTheme: HTMLMetaElement = document.querySelector(
+    '[name="theme-color"]',
+  );
+  const themeToggler = new ThemeToggler(
+    themeButton,
+    themeButtonIcon,
+    themeButtonText,
+    themeBodyClass,
+    browserTheme,
+  );
 </script>
 
 <script>

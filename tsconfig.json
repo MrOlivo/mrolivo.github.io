@@ -18,7 +18,7 @@
       "@data": ["src/data"],
       "@layouts/*": ["src/layouts/*"],
       "@types": ["src/types"],
-      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
     },
     "allowSyntheticDefaultImports" : true
   }

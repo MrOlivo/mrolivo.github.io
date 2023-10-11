@@ -32,7 +32,7 @@
   li,
   a,
   span {
-    @apply font-inter text-subtext1;
+    @apply font-inter text-text;
   }
 
   .container {

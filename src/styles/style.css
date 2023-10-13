@@ -44,6 +44,6 @@
   }
 
   em {
-    @apply font-bold underline not-italic text-maroon;
+    @apply font-bold not-italic text-maroon underline;
   }
 }

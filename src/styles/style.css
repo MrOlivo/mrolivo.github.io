@@ -40,10 +40,10 @@
   }
 
   code {
-    @apply font-bold capitalize text-pink;
+    @apply font-bold capitalize text-mauve;
   }
 
   em {
-    @apply font-bold text-sky;
+    @apply font-bold underline not-italic text-maroon;
   }
 }

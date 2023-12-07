@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^3.0.13
     version: 3.0.13
   astro-robots-txt:
-    specifier: ^0.3.12
-    version: 0.3.12
+    specifier: ^1.0.0
+    version: 1.0.0
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -979,12 +979,11 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: true
 
-  /astro-robots-txt@0.3.12:
-    resolution: {integrity: sha512-ydVbhyzxhoCzVCn0eqUdqCMaADG+GOBYE2YGk2unQ4EpqNlvy4HIGOy/XiAHu/n46suXUkYuxHFIOVd3r1zJvA==}
+  /astro-robots-txt@1.0.0:
+    resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
     dependencies:
-      deepmerge: 4.3.1
       valid-filename: 4.0.0
-      zod: 3.21.4
+      zod: 3.22.4
     dev: true
 
   /astro@3.0.13:
@@ -1388,11 +1387,6 @@ packages:
   /deep-extend@0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
-    dev: true
-
-  /deepmerge@4.3.1:
-    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /dequal@2.0.3:
@@ -3781,8 +3775,8 @@ packages:
     resolution: {integrity: sha512-+dTu2m6gmCbO9Ahm4ZBDapx2O6ZY9QSPXst2WXjcznPMwf2YNpn3RevLx4KkZp1OPW/ouFcoBtBzFz/LeY69oA==}
     dev: true
 
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
 
   /zwitch@2.0.4:

@@ -4,6 +4,9 @@
     <a href="https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/deploy.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/MrOlivo/mrolivo.github.io/deploy.yml?style=for-the-badge&labelColor=363a4f&color=b7bdf8" alt="Deploy to GitHub Pages">
     </a>
+    <a href="https://github.com/MrOlivo/mrolivo.github.io/actions/workflows/ci.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/MrOlivo/mrolivo.github.io/ci.yml?label=CI&style=for-the-badge&labelColor=363a4f&color=f4dbd6" alt="Continuous Integration">
+    </a>
     <a href="https://github.com/MrOlivo/mrolivo.github.io/issues">
         <img src="https://img.shields.io/github/issues/MrOlivo/mrolivo.github.io?style=for-the-badge&labelColor=363a4f&color=f5a97f">
     </a>

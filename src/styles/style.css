@@ -7,17 +7,13 @@
 
 /* ========== tailwind custom styles ========== */
 @layer components {
-  body {
-    @apply bg-base;
-  }
-
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-outfit text-text;
+    @apply font-outfit;
   }
 
   h1 {
@@ -32,7 +28,7 @@
   li,
   a,
   span {
-    @apply font-inter text-text;
+    @apply font-inter;
   }
 
   .container {
@@ -40,10 +36,10 @@
   }
 
   code {
-    @apply font-bold capitalize text-mauve;
+    @apply font-bold capitalize text-mauve dark:text-blue;
   }
 
   em {
-    @apply font-bold not-italic text-maroon underline;
+    @apply font-bold not-italic;
   }
 }

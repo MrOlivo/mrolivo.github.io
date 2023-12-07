@@ -1,6 +1,6 @@
 ---
 import { information } from "@data";
-import { createLogo } from "src/utils/CreateLogo";
+import { createLogo } from "@utils/CreateLogo";
 import { MenuIcon } from "@assets";
 import NavItem from "@components/NavItem.astro";
 import LinkItem from "@components/LinkItem.astro";
@@ -52,11 +52,12 @@ import LinkItem from "@components/LinkItem.astro";
   const themeButtonText: HTMLElement = document.querySelector(
     "#theme-button > span",
   );
-  const themeBodyClass: HTMLElement = document.body;
+  const themeBodyClass: HTMLElement = document.querySelector("html");
   const browserTheme: HTMLMetaElement = document.querySelector(
     '[name="theme-color"]',
   );
-  const themeToggler = new ThemeToggler(
+  
+  new ThemeToggler(
     themeButton,
     themeButtonIcon,
     themeButtonText,

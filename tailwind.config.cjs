@@ -11,6 +11,8 @@ module.exports = {
         gray: "#C4C4C4",
         purple: "#9845e8",
         "dark-gray": "#1A1A1A",
+        mauve: "#8839EF",
+        maroon: "#E64553"
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -23,8 +25,5 @@ module.exports = {
     },
   },
   plugins: [
-    require("@catppuccin/tailwindcss")({
-      defaultFlavour: "latte",
-    }),
   ],
 };

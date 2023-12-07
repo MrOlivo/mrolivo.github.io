@@ -49,6 +49,6 @@ export class ThemeToggler {
     this.themeButtonText.textContent = themeColor;
     this.themeButtonIcon.innerHTML = themeIcon;
     this.themeBodyClass.classList.toggle("dark", !this.isLight);
-    this.themeBodyClass.classList.toggle("frappe", !this.isLight);
+    this.themeBodyClass.classList.toggle("light", this.isLight);
   }
 }

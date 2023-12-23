@@ -25,7 +25,7 @@ import LinkItem from "@components/LinkItem.astro";
     <!-- Dropdown menu -->
     <div
       id="dropdown"
-      class="right-4 z-10 hidden w-56 origin-top-right translate-y-36 rounded-lg bg-base px-4 shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-surface0 md:mt-0 md:flex md:w-auto md:translate-x-0 md:translate-y-0 md:items-center md:shadow-none md:ring-0"
+      class="bg-base dark:bg-surface0 right-4 z-10 hidden w-56 origin-top-right translate-y-36 rounded-lg px-4 shadow-lg ring-1 ring-black ring-opacity-5 md:mt-0 md:flex md:w-auto md:translate-x-0 md:translate-y-0 md:items-center md:shadow-none md:ring-0"
     >
       <ul class="flex flex-col items-center md:w-auto md:flex-row md:gap-4">
         <NavItem text="Experiencia" link="#experience" />
@@ -56,7 +56,7 @@ import LinkItem from "@components/LinkItem.astro";
   const browserTheme: HTMLMetaElement = document.querySelector(
     '[name="theme-color"]',
   );
-  
+
   new ThemeToggler(
     themeButton,
     themeButtonIcon,

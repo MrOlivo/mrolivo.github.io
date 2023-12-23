@@ -7,11 +7,11 @@ const { title, href, ...attrs } = Astro.props as ILink;
   href={href}
   target="_blank"
   rel="noopener noreferrer"
-  class="ml-2 flex cursor-pointer items-center justify-center rounded-lg bg-sky-300 p-3 text-dark hover:bg-indigo-300 dark:bg-blue dark:hover:bg-lavender"
+  class="ml-2 flex w-fit cursor-pointer items-center justify-center rounded-lg bg-mauve px-4 py-2 text-white"
   {...attrs}
 >
   <div>
     <slot />
   </div>
-  {title && <span class="pl-2 text-lg font-bold text-dark">{title}</span>}
+  {title && <span class="pl-2 text-lg capitalize">{title}</span>}
 </a>

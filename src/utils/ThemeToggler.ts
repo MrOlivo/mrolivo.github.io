@@ -41,7 +41,7 @@ export class ThemeToggler {
   }
 
   private applyTheme() {
-    const themeColor = this.isLight ? "light" : "dark";
+    const themeColor = this.isLight ? "claro" : "oscuro";
     const themeIcon = this.isLight ? SunIcon : MoonIcon;
     const browserColor = this.isLight ? "#EFF1F5" : "#1E1E2E";
 

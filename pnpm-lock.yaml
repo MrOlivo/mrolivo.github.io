@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^0.12.0
     version: 0.12.0
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.4
-    version: 0.5.4(prettier-plugin-astro@0.12.0)(prettier@3.0.3)
+    specifier: ^0.5.10
+    version: 0.5.10(prettier-plugin-astro@0.12.0)(prettier@3.0.3)
   sharp:
     specifier: ^0.33.0
     version: 0.33.0
@@ -3139,23 +3139,6 @@ packages:
       postcss: 8.4.29
     dev: true
 
-  /postcss-load-config@4.0.1(postcss@8.4.29):
-    resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
-    engines: {node: '>= 14'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.1.0
-      postcss: 8.4.29
-      yaml: 2.3.1
-    dev: true
-
   /postcss-load-config@4.0.2(postcss@8.4.29):
     resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
     engines: {node: '>= 14'}
@@ -3244,14 +3227,13 @@ packages:
       sass-formatter: 0.7.8
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.4(prettier-plugin-astro@0.12.0)(prettier@3.0.3):
-    resolution: {integrity: sha512-QZzzB1bID6qPsKHTeA9qPo1APmmxfFrA5DD3LQ+vbTmAnY40eJI7t9Q1ocqel2EKMWNPLJqdTDWZj1hKYgqSgg==}
+  /prettier-plugin-tailwindcss@0.5.10(prettier-plugin-astro@0.12.0)(prettier@3.0.3):
+    resolution: {integrity: sha512-9UGSejqFxGG6brYjFfTYlJ8zs4L/lvZg1AngFfaC5Fs1otSskASv5IWKmjPu5MlABQUtTKtMArKyYr/hWpXSUg==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
-      '@shufo/prettier-plugin-blade': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
       prettier: ^3.0
       prettier-plugin-astro: '*'
@@ -3270,8 +3252,6 @@ packages:
       '@prettier/plugin-pug':
         optional: true
       '@shopify/prettier-plugin-liquid':
-        optional: true
-      '@shufo/prettier-plugin-blade':
         optional: true
       '@trivago/prettier-plugin-sort-imports':
         optional: true
@@ -3861,7 +3841,7 @@ packages:
       postcss: 8.4.29
       postcss-import: 15.1.0(postcss@8.4.29)
       postcss-js: 4.0.1(postcss@8.4.29)
-      postcss-load-config: 4.0.1(postcss@8.4.29)
+      postcss-load-config: 4.0.2(postcss@8.4.29)
       postcss-nested: 6.0.1(postcss@8.4.29)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
@@ -4264,11 +4244,6 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: true
-
-  /yaml@2.3.1:
-    resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
-    engines: {node: '>= 14'}
     dev: true
 
   /yaml@2.3.4:
